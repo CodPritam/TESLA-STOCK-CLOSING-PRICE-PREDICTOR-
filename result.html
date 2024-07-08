@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Close Value</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .result-container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .predicted-close {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4CAF50; /* Green color */
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Predicted Close Value</h2>
+        <p><strong>Opening Value:</strong> {{ opening }}</p>
+        <p><strong>High Value:</strong> {{ high }}</p>
+        <p><strong>Low Value:</strong> {{ low }}</p>
+        <p><strong>Volume:</strong> {{ volume }}</p>
+        <p><strong>Predicted Close Value:</strong> <span class="predicted-close">{{ predicted_close }}</span></p>
+    </div>
+</body>
+</html>
